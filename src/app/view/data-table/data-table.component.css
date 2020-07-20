@@ -1,0 +1,28 @@
+table {
+  width: 100%;
+  height: 100%;
+  color: #655c56;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  background: #e4e3e3;
+}
+.mat-row:hover  {
+  background: rgba(228, 227, 227, 0.51);
+}
+td{
+  color: #204051;
+}
+tr.mat-header-row{
+  background: #3b6978;
+}
+th.mat-header-cell{
+  color: #e4e3e3;
+}
+.mat-column-row{
+  color: #3b6978;
+}
