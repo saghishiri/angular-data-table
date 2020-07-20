@@ -19,13 +19,15 @@ export class DataTableComponent implements OnInit {
   }
 
   getData() {
-    this.mainService.getData().subscribe(res => {
-      console.log(res);
-      this.dataSource = res;
-      this.loading = false;
-    }, error => {
-      this.loading = false;
-    })
+    this.loading = true;
+    setTimeout(()=> {
+      this.mainService.getData().subscribe(res => {
+        this.dataSource = res;
+        this.loading = false;
+      }, error => {
+        this.loading = false;
+      })
+    }, 500)
   }
 
 }

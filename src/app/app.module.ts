@@ -10,6 +10,8 @@ import {MainService} from "./core/services/main.service";
 import {HttpClientModule} from "@angular/common/http";
 import {MatRippleModule} from "@angular/material/core";
 import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import {MatPaginatorModule} from "@angular/material/paginator";
     BrowserAnimationsModule,
     MatTableModule,
     MatRippleModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatProgressSpinnerModule,
+    MatButtonModule
   ],
   providers: [MainService],
   bootstrap: [AppComponent]
