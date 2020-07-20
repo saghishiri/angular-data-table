@@ -4,9 +4,12 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {DataTableComponent} from './data-table/data-table.component';
+import {DataTableComponent} from './view/data-table/data-table.component';
 import {MatTableModule} from "@angular/material/table";
-import {MainService} from "./services/main.service";
+import {MainService} from "./core/services/main.service";
+import {HttpClientModule} from "@angular/common/http";
+import {MatRippleModule} from "@angular/material/core";
+import {MatPaginatorModule} from "@angular/material/paginator";
 
 @NgModule({
   declarations: [
@@ -15,9 +18,12 @@ import {MainService} from "./services/main.service";
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatRippleModule,
+    MatPaginatorModule
   ],
   providers: [MainService],
   bootstrap: [AppComponent]
